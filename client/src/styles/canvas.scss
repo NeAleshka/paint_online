@@ -1,0 +1,14 @@
+@import "variables";
+
+.canvas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  padding-top: 50px;
+  height: 100%;
+}
+
+canvas{
+  background-color: white;
+}

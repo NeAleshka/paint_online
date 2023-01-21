@@ -1,0 +1,66 @@
+@import "variables";
+
+.toolbar{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  height: $toolbar-height;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 20;
+  padding: 0 10px;
+  &__button{
+    border: none;
+    width: 25px;
+    height: 33px;
+    background-size:cover;
+    margin-right: 16px;
+  }
+  .brush{
+    background: url("../assets/images/brush.svg") no-repeat center center;
+  }
+  .circle{
+    background: url("../assets/images/circle.svg") no-repeat center center;
+  }
+  .eraser{
+    background: url("../assets/images/eraser.svg") no-repeat center center;
+  }
+  .line{
+    background: url("../assets/images/line.svg") no-repeat center center;
+  }
+  .rect{
+    background: url("../assets/images/rect.svg") no-repeat center center;
+  }
+  .redo{
+    background: url("../assets/images/redo.svg") no-repeat center center;
+  }
+  .save{
+    background: url("../assets/images/save.svg") no-repeat center center;
+  }
+  .undo{
+    margin-left: auto;
+    background: url("../assets/images/undo.svg") no-repeat center center;
+  }
+  .palette{
+    background: url("../assets/images/palette.svg") no-repeat center center;
+  }
+}
+.active_btn{
+  border-bottom:black 2px solid
+}
+
+.disabled{
+  opacity: .3;
+}
+
+.settings_bar{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  height: $toolbar-height;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  top: $toolbar-height;
+}
